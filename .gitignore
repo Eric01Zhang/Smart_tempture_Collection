@@ -1,0 +1,7 @@
+*/figures
+*/MDK_Project/DebugConfig
+*/MDK_Project/MDK_Project
+*.d
+*.o
+*.lst
+
