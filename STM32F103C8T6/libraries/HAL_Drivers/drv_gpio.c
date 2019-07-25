@@ -12,6 +12,8 @@
 #include <board.h>
 #include "drv_gpio.h"
 
+
+
 #ifdef RT_USING_PIN
 
 static const struct pin_index pins[] = 

@@ -338,7 +338,7 @@
               <MiscControls></MiscControls>
               <Define>STM32F103xB, USE_HAL_DRIVER</Define>
               <Undefine></Undefine>
-              <IncludePath>..\applications;..\MDK_Project;..\RTT_Thread\src;..\board\CubeMX_Config\Inc;..\board;..\board\linker_scripts;..\DebugConfig;..\libraries\HAL_Drivers\config\f1;..\libraries\STM32F1xx_HAL\CMSIS\Include;..\libraries\STM32F1xx_HAL\STM32F1xx_HAL_Driver\Inc;..\libraries\STM32F1xx_HAL\CMSIS\Device\ST\STM32F1xx\Include;..\RTT_Thread\src;..\RTT_Thread\components\drivers\serial;..\RTT_Thread\components\drivers\misc;..\RTT_Thread\components\drivers\src;..\RTT_Thread\include;..\RTT_Thread\libcpu\arm\common;..\RTT_Thread\libcpu\arm\cortex-m3;..\RTT_Thread\components\finsh;..\RTT_Thread\components\drivers\include;..\libraries\HAL_Drivers;..\libraries\HAL_Drivers\config\f1;..\board\linker_scripts</IncludePath>
+              <IncludePath>..\applications;..\MDK_Project;..\RTT_Thread\src;..\board\CubeMX_Config\Inc;..\board;..\board\linker_scripts;..\DebugConfig;..\libraries\HAL_Drivers\config\f1;..\libraries\STM32F1xx_HAL\CMSIS\Include;..\libraries\STM32F1xx_HAL\STM32F1xx_HAL_Driver\Inc;..\libraries\STM32F1xx_HAL\CMSIS\Device\ST\STM32F1xx\Include;..\RTT_Thread\src;..\RTT_Thread\components\drivers\serial;..\RTT_Thread\components\drivers\misc;..\RTT_Thread\components\drivers\src;..\RTT_Thread\include;..\RTT_Thread\libcpu\arm\common;..\RTT_Thread\libcpu\arm\cortex-m3;..\RTT_Thread\components\finsh;..\RTT_Thread\components\drivers\include;..\libraries\HAL_Drivers;..\libraries\HAL_Drivers\config\f1;..\board\linker_scripts;..\RTT_Thread\components\drivers\sensors;..\board\ports</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -507,6 +507,11 @@
               <FileType>2</FileType>
               <FilePath>..\libraries\STM32F1xx_HAL\CMSIS\Device\ST\STM32F1xx\Source\Templates\arm\startup_stm32f103xb.s</FilePath>
             </File>
+            <File>
+              <FileName>sensor_dallas_ds18b20.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\board\ports\sensor_dallas_ds18b20.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -586,6 +591,16 @@
               <FileName>workqueue.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\RTT_Thread\components\drivers\src\workqueue.c</FilePath>
+            </File>
+            <File>
+              <FileName>sensor.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\RTT_Thread\components\drivers\sensors\sensor.c</FilePath>
+            </File>
+            <File>
+              <FileName>sensor_cmd.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\RTT_Thread\components\drivers\sensors\sensor_cmd.c</FilePath>
             </File>
           </Files>
         </Group>
